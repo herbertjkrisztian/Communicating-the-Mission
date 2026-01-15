@@ -15,12 +15,23 @@
         }
 
         .container {
+            position: relative;
             max-width: 800px;
             margin: 80px auto;
             padding: 40px;
             background-color: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+        }
+
+        .header-info {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.4;
+            text-align: right;
         }
 
         h1 {
@@ -33,6 +44,13 @@
             font-weight: normal;
             color: #555;
             margin-bottom: 12px;
+        }
+
+        .date {
+            text-align: right;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 32px;
         }
 
         p {
@@ -58,6 +76,12 @@
             text-decoration: underline;
         }
 
+        .publication-link {
+            font-size: 0.95em;
+            text-decoration: none;
+            color: #222; /* opcionális: link szín megegyezik a szöveggel */
+        }
+
         footer {
             margin-top: 48px;
             font-size: 0.9em;
@@ -68,7 +92,7 @@
 <body>
 
 <div class="container">
-    <div style="position: absolute; top: 20px; right: 40px; font-size: 0.95em; color: #555;">
+    <div class="header-info">
         Herbert J. Krisztián<br>✨ PhD Student ✨
     </div>
 
@@ -77,8 +101,8 @@
         Be part of a collaborative effort advancing interdisciplinarity in the scientific challenges of the 21st century.
     </h2>
 
-    <div style="text-align: right; font-size: 0.9em; color: #555; margin-bottom: 32px;">
-        15.01.2026 17:34
+    <div class="date">
+        <time datetime="2026-01-15T17:34">15.01.2026 17:34</time>
     </div>
 
     <p>
@@ -102,9 +126,12 @@
     </p>
 
     <p>
-        <strong>Keywords:</strong> cognitive linguistics, psycholinguistics, computational linguistics, linguistic-statistical modeling, data visualization, linguistic fingerprint, language use, personality correlates, Python, personality change, language change, coherence patterns, discrepancy patterns, z-test, quantification.<br><br>
-        <strong>Publication List:</strong><br>
-        <a href="https://ojs.elte.hu/initium/article/view/12104/10118" target="_blank" rel="noopener noreferrer">
+        <strong>Keywords:</strong> cognitive linguistics, psycholinguistics, computational linguistics, linguistic-statistical modeling, data visualization, linguistic fingerprint, language use, personality correlates, Python, personality change, language change, coherence patterns, discrepancy patterns, z-test, quantification.
+    </p>
+
+    <p><strong>Publication List:</strong></p>
+    <p>
+        <a class="publication-link" href="https://ojs.elte.hu/initium/article/view/12104/10118" target="_blank" rel="noopener noreferrer">
             Herbert, J. Krisztián (2025): Überzufälligkeit, Musterhaftigkeit und Persönlichkeitsspezifizität im menschlichen Sprachgebrauch. Sprachstatistik auf den Spuren des sprachlichen Fingerabdrucks. In: Kerekes, Amália (Ed.) (2025): Initium. Vol. 7. No. 1. Budapest: Eötvös Loránd University, Department of German Linguistics, 249-288.
         </a>
     </p>
